@@ -4,25 +4,30 @@
 		<meta charset="utf-8">
 		<title>Harrbour 0.1</title>
 		<!-- Sencha Touch CSS -->
-		<link rel="stylesheet" href="lib/touch/resources/css/sencha-touch.css" type="text/css">
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="lib/touch/resources/css/android.css" type="text/css">
+		<link rel="stylesheet" href="resources/css/app.css" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Damion&v2' rel='stylesheet' type='text/css'>
 		<!-- Sencha Touch JS -->
-		<script type="text/javascript" src="lib/touch/sencha-touch-debug.js"></script>
+		<script type="text/javascript" src="resources/js/sencha-touch.js"></script>
 		<!-- Application JS -->
+			<!-- GMaps JS -->
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="plugins/GmapTracker.js"></script>
+		<script type="text/javascript" src="plugins/GmapTraffic.js"></script>
+			<!-- MVC JS -->
 		<script type="text/javascript" src="app/app.js"></script>
-		<script type="text/javascript" src="app/models/Menu.js"></script>
-		<script type="text/javascript" src="app/stores/Menu.js"></script>
+		<script type="text/javascript" src="app/models/Panel.js"></script>
+		<script type="text/javascript" src="app/stores/Panel.js"></script>
 		<script type="text/javascript" src="app/models/Boats.js"></script>
 		<script type="text/javascript" src="app/stores/Boats.js"></script> 
 		<script type="text/javascript" src="app/models/Ports.js"></script>
 		<script type="text/javascript" src="app/stores/Ports.js"></script>
 		<script type="text/javascript" src="app/views/Viewport.js"></script>
-		<script type="text/javascript" src="app/views/Menu.js"></script>
-		<script type="text/javascript" src="app/views/Boats.js"></script>
-		<script type="text/javascript" src="app/views/Ports.js"></script>
+		<script type="text/javascript" src="app/views/Panel.js"></script>
 		<script type="text/javascript" src="app/views/Boat.js"></script>
 		<script type="text/javascript" src="app/views/Port.js"></script>
+		<script type="text/javascript" src="app/views/BoatImg.js"></script>
+		<script type="text/javascript" src="app/views/PortImg.js"></script>
+		<script type="text/javascript" src="app/views/PortMap.js"></script>
 		<script type="text/javascript" src="app/controllers/Default.js"></script>
 		<script type="text/javascript">
 			document.addEventListener("deviceready", App.mainLaunch, false);

@@ -1,9 +1,2 @@
-Dependencies:
-1. Sencha Touch v1.0
-
 Release Note:
-* The Sencha Touch library is not included here.
-* Copyright notices are not included here, code is GPLv3
-
-Todo:
-* add license notices
+* App in production mode, library is included
