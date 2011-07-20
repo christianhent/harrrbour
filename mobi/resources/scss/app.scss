@@ -1,0 +1,108 @@
+/**
+ * @version     0.1 app.scss
+ * @package     Harrrbour
+ * @subpackage  SASS
+ * @copyright   Copyright (C) 2011 Christian Hent. (hent.dev@googlemail.com).
+ * @license     GNU GPLv3 <http://www.gnu.org/licenses/gpl.html>
+ * @link        http://zenjiapps.com
+ */
+
+$base-color: #386AA9;
+$color-light: #444;
+$complement: #777;
+$list-header-bg-color: #ccc;
+$list-header-color: #777;
+$toolbar-gradient: 'matte';
+
+@import 'sencha-touch/default/all';
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+@include sencha-loading-spinner;
+
+@include pictos-iconmask('settings');
+@include pictos-iconmask('refresh');
+@include pictos-iconmask('compass1');
+@include pictos-iconmask('speedometer1');
+@include pictos-iconmask('info2');
+@include pictos-iconmask('locate4');
+@include pictos-iconmask('photos2');
+@include pictos-iconmask('look');
+
+.x-toolbar .x-toolbar-title {
+	font-weight: normal;
+	font-family: 'Damion', cursive;
+}
+
+h1 {
+	font-weight: normal;
+	font-family: 'Damion', cursive;
+}
+
+.x-list .x-list-item .x-list-item-body span {
+	font-size: .65em;
+	font-style: italic;
+}
+
+.x-tabbar {
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #666;
+	@include display-box;
+	@include box-orient(horizontal);
+}
+
+.x-html {
+	padding: 10px;
+	font-size: 14px;
+	line-height: 18px;  
+    
+	p{
+		font-size: 115%;
+	}
+}
+
+.image{
+	padding-top: 50px;
+	text-align: center;
+}
+.polaroid {
+	padding: 10px;
+	padding-bottom: 40px;
+	background-color: #fff;
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+	background-image: -webkit-linear-gradient(top, #fff 85%, #eee);
+	background-image: -moz-linear-gradient(top, #fff 85%, #eee);
+	background-image: linear-gradient(top, #fff 85%, #eee);
+}
+
+.x-toolbar .x-button .x-button-label, .x-toolbar .x-button .x-hasbadge .x-badge, .x-hasbadge .x-toolbar .x-button .x-badge {
+	font-size: .65em;
+}
+
+.intro {
+	text-align: center;
+	font-size: 1.00em;
+	padding: 15px;
+	margin: 30px;
+	padding-bottom: 40px;
+	background-color: #fff;
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+	background-image: -webkit-linear-gradient(top, #fff 85%, #eee);
+	background-image: -moz-linear-gradient(top, #fff 85%, #eee);
+	background-image: linear-gradient(top, #fff 85%, #eee);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+.quote{
+	float: right;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	padding-right: 5px;
+	font-size: 0.8em;
+	font-style: italic;
+}
