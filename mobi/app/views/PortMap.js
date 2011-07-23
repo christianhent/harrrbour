@@ -36,7 +36,7 @@ App.views.PortMap = Ext.extend(Ext.Panel, {
 			handler : function(){
 				Ext.dispatch({
 					controller: App.controllers.Default,
-					action: 'readMap'
+					action: 'readPortMap'
 				});
 			}
             },	
