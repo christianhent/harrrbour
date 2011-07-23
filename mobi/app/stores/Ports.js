@@ -15,7 +15,7 @@ App.stores.Ports = new Ext.data.Store({
 	proxy: 
 	{
 		type: 'ajax',
-        url: 'http://192.168.2.107/index.php?option=com_harbour&view=ports&sort=title&direction=asc',
+        url: '../index.php?option=com_harbour&view=ports&sort=title&direction=asc',
 		extraParams: {
 			format: 'json'
 		},
